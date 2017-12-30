@@ -5,7 +5,7 @@ import threading
 
 
 def checkActivetUsers():
-    threading.Timer(1.0, checkActivetUsers).start()  # called every second
+    threading.Timer(5.0, checkActivetUsers).start()  # called every second
     timenow = datetime.datetime.now()
     f = open('twitch_active_viewers.txt', 'w')
     print timenow
