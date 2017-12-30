@@ -1,0 +1,8 @@
+1. Python must be installed
+2. pip install python-twitch-client 
+3. run twitch_level.py
+4. check your status on twitch_active_viewers.txt in the same folder.
+
+
+Note. Code not yet optimized to stop after sream is inactive...modifcations coming soon.
+Good Luck!
