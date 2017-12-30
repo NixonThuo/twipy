@@ -1,3 +1,4 @@
+# pip install python-twitch-client
 from twitch import TwitchClient
 import datetime
 import threading
