@@ -17,7 +17,7 @@ def checkActivetUsers():
         twitchthread.cancel()
     timenow = datetime.datetime.now()
     f = open('twitch_active_viewers.txt', 'a+')
-    print timenow
+    print(timenow)
     f.write(timenow.strftime("%Y-%m-%d %H:%M:%S") + '\n')
     client = TwitchClient('k0tqqij2xwujktxleoxyj8i6fa9jzv')
     user_id = ''
@@ -34,7 +34,7 @@ def checkActivetUsers():
                 ': viewers - ' + str(stream[u'viewers']) + '\n\n')
     else:
         offlineSeconds = offlineSeconds + 5
-        print 'Channel Currently Offline'
+        print('Channel Currently Offline')
         f.write('Channel Currently Offline \n\n')
     f.close()
 
